@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "eqlanmod:item/holy_mantle_3d"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "eqlanmod:item/holy_mantle_3d"
+		},
+		"ground": {
+			"parent": "eqlanmod:item/holy_mantle_3d"
+		},
+		"fixed": {
+			"parent": "eqlanmod:item/holy_mantle_3d"
+		}
+	}
+}

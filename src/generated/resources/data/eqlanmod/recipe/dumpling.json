@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "eqlanmod:twitch_heart"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    " W ",
+    "WHW",
+    " W "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eqlanmod:dumpling"
+  }
+}

@@ -1,0 +1,4 @@
+// 1.21.1	2025-02-23T15:33:21.7909345	Registries
+0d3e773fbe767f33c4dcd57a4621e09abc86010f data/eqlanmod/forge/biome_modifier/add_twitch_ore.json
+82681e36cca9c33e670b052ec4b0d579f9eed5eb data/eqlanmod/worldgen/configured_feature/twitch_ore.json
+d4259529380b28cb0dff5255e4a757e4a7a4bcb8 data/eqlanmod/worldgen/placed_feature/twitch_ore_placed.json

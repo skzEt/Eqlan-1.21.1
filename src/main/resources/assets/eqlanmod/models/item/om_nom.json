@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "eqlanmod:item/om_nom_3d"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "eqlanmod:item/om_nom_3d"
+		},
+		"ground": {
+			"parent": "eqlanmod:item/om_nom_3d"
+		},
+		"fixed": {
+			"parent": "eqlanmod:item/om_nom_2d"
+		}
+	}
+}

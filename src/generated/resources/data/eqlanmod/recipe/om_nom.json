@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "eqlanmod:eqlan_alloy"
+    },
+    "L": {
+      "item": "minecraft:lime_dye"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LER",
+    "LLL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eqlanmod:om_nom"
+  }
+}

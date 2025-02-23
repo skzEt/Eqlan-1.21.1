@@ -1,0 +1,39 @@
+{
+  "item.eqlanmod.dumpling": "Dumpling",
+  "item.eqlanmod.dumpling_sun": "Sunny dumpling",
+  "item.eqlanmod.drake_pendant": "Drake's Pendant",
+  "item.eqlanmod.stintocoin": "Stint coin",
+  "item.eqlanmod.mzlff_microphone": "Mazelov's microphone",
+
+  "item.eqlanmod.glasses": "Cool glasses",
+  "item.eqlanmod.stint_helmet": "A coin-gilded helmet",
+  "item.eqlanmod.boxers": "Boxers",
+  "item.eqlanmod.crown_of_light": "Crown Of Light",
+  "item.eqlanmod.crown_of_light_disabled": "Crown Of Light",
+
+  "item.eqlanmod.overcooked_dumpling": "Burnt Pelmi",
+  "item.eqlanmod.larva": "Larva",
+  "item.eqlanmod.cooked_larva": "Fried larva",
+
+  "item.eqlanmod.school_boot": "Velvet traction",
+  "item.eqlanmod.twitch_heart": "Heart of Twitch",
+  "item.eqlanmod.twitch_diamond": "Twitch Diamond",
+  "item.eqlanmod.coin_alloy": "Coin Alloy",
+  "item.eqlanmod.om_nom": "Om Nom",
+  "item.eqlanmod.cactus_plush": "Dancing cactus",
+  "item.eqlanmod.eqlan_alloy": "Eblan Squada rafting",
+  "item.eqlanmod.holy_mantle": "Holy Mantle",
+
+  "item.eqlanmod.baseline_business_disk": "Baseline Business",
+  "item.eqlanmod.baseline_business_disk.desc": "CMH, mzlff - Baseline Business",
+
+  "block.eqlanmod.twitch_ore": "Twitch ore",
+  "block.eqlanmod.deepslate_twitch_ore": "Deepslate Twitch ore",
+  "block.eqlanmod.twitch_block": "Twitch Block",
+
+  "effect.eqlanmod.hydrophobia": "Hydrophobia",
+
+  "sounds.eqlanmod.cactus_used": "",
+
+  "creativetab.eqlan_tab": "Eqlan Mod"
+}

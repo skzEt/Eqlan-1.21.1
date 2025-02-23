@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.0,
+  "group": "dumpling",
+  "ingredient": {
+    "item": "eqlanmod:dumpling"
+  },
+  "result": {
+    "id": "eqlanmod:overcooked_dumpling"
+  }
+}

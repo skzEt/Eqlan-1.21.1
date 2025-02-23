@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "twitch",
+  "ingredient": {
+    "item": "eqlanmod:twitch_ore"
+  },
+  "result": {
+    "id": "eqlanmod:twitch_diamond"
+  }
+}

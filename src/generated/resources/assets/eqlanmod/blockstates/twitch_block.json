@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "eqlanmod:block/twitch_block"
+    }
+  }
+}

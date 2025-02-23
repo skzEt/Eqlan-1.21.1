@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 150,
+  "experience": 0.0,
+  "group": "larva",
+  "ingredient": {
+    "item": "eqlanmod:larva"
+  },
+  "result": {
+    "id": "eqlanmod:cooked_larva"
+  }
+}

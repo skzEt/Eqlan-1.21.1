@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "T": {
+      "item": "eqlanmod:twitch_diamond"
+    }
+  },
+  "pattern": [
+    "TG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eqlanmod:twitch_heart"
+  }
+}

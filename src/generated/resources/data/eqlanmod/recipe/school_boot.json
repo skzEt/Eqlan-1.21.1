@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:black_dye"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "K": {
+      "item": "minecraft:dried_kelp"
+    }
+  },
+  "pattern": [
+    "KK ",
+    "KB ",
+    "KKC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eqlanmod:school_boot"
+  }
+}

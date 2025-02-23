@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "T": {
+      "item": "eqlanmod:twitch_block"
+    },
+    "W": {
+      "item": "minecraft:wither_skeleton_skull"
+    }
+  },
+  "pattern": [
+    "WTW",
+    "TNT",
+    " T "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eqlanmod:holy_mantle"
+  }
+}

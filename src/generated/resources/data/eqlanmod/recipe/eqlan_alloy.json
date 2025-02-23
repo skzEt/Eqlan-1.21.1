@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "eqlanmod:drake_pendant"
+    },
+    "M": {
+      "item": "eqlanmod:mzlff_microphone"
+    },
+    "S": {
+      "item": "eqlanmod:stintocoin"
+    },
+    "T": {
+      "item": "eqlanmod:dumpling_sun"
+    }
+  },
+  "pattern": [
+    "ST",
+    "DM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eqlanmod:eqlan_alloy"
+  }
+}

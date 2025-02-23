@@ -1,0 +1,39 @@
+{
+  "item.eqlanmod.dumpling": "Пельмень",
+  "item.eqlanmod.dumpling_sun": "Солнечный пельмень",
+  "item.eqlanmod.drake_pendant": "Подвеска Драке",
+  "item.eqlanmod.stintocoin": "Стинта Коин",
+  "item.eqlanmod.mzlff_microphone": "Микрофон Мазелова",
+
+  "item.eqlanmod.glasses": "Крутые очки",
+  "item.eqlanmod.stint_helmet": "Позолоченный монетами шлем",
+  "item.eqlanmod.boxers": "Боксеры",
+  "item.eqlanmod.crown_of_light": "Корона света",
+  "item.eqlanmod.crown_of_light_disabled": "Корона света",
+
+  "item.eqlanmod.overcooked_dumpling": "Сгоревший Пельми",
+  "item.eqlanmod.larva": "Личинка",
+  "item.eqlanmod.cooked_larva": "Жаренная личинка",
+
+  "item.eqlanmod.school_boot": "Бархатные тяги",
+  "item.eqlanmod.twitch_heart": "Сердце Твича",
+  "item.eqlanmod.twitch_diamond": "Твичовский алмаз",
+  "item.eqlanmod.coin_alloy": "Сплав монет",
+  "item.eqlanmod.om_nom": "Ам Ням",
+  "item.eqlanmod.cactus_plush": "Танцующий кактус",
+  "item.eqlanmod.eqlan_alloy": "Сплав Еблан сквада",
+  "item.eqlanmod.holy_mantle": "Святая мантия",
+
+  "item.eqlanmod.baseline_business_disk": "Бэйслайн Бизнес",
+  "item.eqlanmod.baseline_business_disk.desc": "CMH, mzlff - Бэйслайн Бизнес",
+
+  "block.eqlanmod.twitch_ore": "Твичовская руда",
+  "block.eqlanmod.deepslate_twitch_ore": "Глубокая сланцевая твичовская руда",
+  "block.eqlanmod.twitch_block": "Твичовский блок",
+
+  "effect.eqlanmod.hydrophobia": "Гидрофобия",
+
+  "sounds.eqlanmod.cactus_used": "",
+
+  "creativetab.eqlan_tab": "Eqlan Mod"
+}

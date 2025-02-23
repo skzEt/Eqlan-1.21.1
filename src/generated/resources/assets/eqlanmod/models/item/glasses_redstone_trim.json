@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eqlanmod:item/glasses",
+    "layer1": "minecraft:trims/items/_trim_redstone"
+  }
+}

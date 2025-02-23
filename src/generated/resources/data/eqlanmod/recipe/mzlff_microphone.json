@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "H": {
+      "item": "eqlanmod:twitch_heart"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "CC ",
+    "CH ",
+    "  S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eqlanmod:mzlff_microphone"
+  }
+}

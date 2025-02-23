@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_drake_pendant": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eqlanmod:drake_pendant"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dumpling_sun": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eqlanmod:dumpling_sun"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_mzlff_microphone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eqlanmod:mzlff_microphone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stintocoin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eqlanmod:stintocoin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eqlanmod:eqlan_alloy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stintocoin",
+      "has_dumpling_sun",
+      "has_drake_pendant",
+      "has_mzlff_microphone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eqlanmod:eqlan_alloy"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "eqlanmod:item/crown_of_light"
+	}
+}

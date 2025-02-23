@@ -1,0 +1,28 @@
+{
+  "om_nom_used": {
+    "subtitles": "sounds.eqlanmod.om_nom_used",
+    "sounds": [
+      "eqlanmod:om_nom_used"
+    ]
+  },
+  "om_nom_exploded": {
+    "subtitles": "sounds.eqlanmod.om_nom_exploded",
+    "sounds": [
+      "eqlanmod:om_nom_exploded"
+    ]
+  },
+  "holy_mantle_used": {
+    "subtitles": "sounds.eqlanmod.holy_mantle_used",
+    "sounds": [
+      "eqlanmod:holy_mantle_used"
+    ]
+  },
+  "baseline_business": {
+    "sounds": [
+      {
+        "name": "eqlanmod:baseline_business",
+        "stream": true
+      }
+    ]
+  }
+}

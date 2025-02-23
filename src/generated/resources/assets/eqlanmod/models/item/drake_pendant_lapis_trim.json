@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eqlanmod:item/drake_pendant",
+    "layer1": "minecraft:trims/items/_trim_lapis"
+  }
+}
