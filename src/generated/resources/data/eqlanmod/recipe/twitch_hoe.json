@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "T": {
+      "item": "eqlanmod:twitch_diamond"
+    }
+  },
+  "pattern": [
+    "TT",
+    " S",
+    " S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eqlanmod:twitch_hoe"
+  }
+}
