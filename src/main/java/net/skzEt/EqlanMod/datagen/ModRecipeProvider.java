@@ -131,7 +131,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModItems.STINTOCOIN.get())
                 .unlockedBy(getHasName(ModItems.STINTOCOIN.get()), has(ModItems.STINTOCOIN.get()))
                 .save(pRecipeOutput);
-        // EBLAN ALLOY
+        // Eblan Alloy
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EBLAN_ALLOY.get())
                 .pattern("ST")
                 .pattern("DM")
@@ -144,7 +144,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.DRAKE_PENDANT.get()), has(ModItems.DRAKE_PENDANT.get()))
                 .unlockedBy(getHasName(ModItems.MZLFF_MICROPHONE.get()), has(ModItems.MZLFF_MICROPHONE.get()))
                 .save(pRecipeOutput);
-        // MZLFF MICROPHONE
+        // Mzlff Microphone
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MZLFF_MICROPHONE.get())
                 .pattern("CC ")
                 .pattern("CH ")
@@ -154,7 +154,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STICK)
                 .unlockedBy(getHasName(ModItems.TWITCH_HEART.get()), has(ModItems.TWITCH_HEART.get()))
                 .save(pRecipeOutput);
-        // OM NOM
+        // Om Nom
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OM_NOM.get())
                 .pattern("LLL")
                 .pattern("LER")
@@ -164,7 +164,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('R', Items.RED_DYE)
                 .unlockedBy(getHasName(ModItems.EBLAN_ALLOY.get()), has(ModItems.EBLAN_ALLOY.get()))
                 .save(pRecipeOutput);
-        // HOLY MANTLE
+        // Holy Mantle
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HOLY_MANTLE.get())
                 .pattern("WTW")
                 .pattern("TNT")
@@ -174,6 +174,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('N', Items.NETHER_STAR)
                 .unlockedBy(getHasName(ModItems.TWITCH_DIAMOND.get()), has(ModItems.TWITCH_DIAMOND.get()))
                 .save(pRecipeOutput);
+        // Twitch Sword
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TWITCH_SWORD.get())
+                .pattern("T")
+                .pattern("T")
+                .pattern("S")
+                .define('T', ModItems.TWITCH_DIAMOND.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TWITCH_DIAMOND.get()), has(ModItems.TWITCH_DIAMOND.get()))
+                .save(pRecipeOutput);
+        // Twitch Axe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TWITCH_AXE.get())
+                .pattern("TT")
+                .pattern("TS")
+                .pattern(" S")
+                .define('T', ModItems.TWITCH_DIAMOND.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TWITCH_DIAMOND.get()), has(ModItems.TWITCH_DIAMOND.get()))
+                .save(pRecipeOutput);
+        // Twitch Pickaxe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TWITCH_PICKAXE.get())
+                .pattern("TTT")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('T', ModItems.TWITCH_DIAMOND.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TWITCH_DIAMOND.get()), has(ModItems.TWITCH_DIAMOND.get()))
+                .save(pRecipeOutput);
+        // Twitch Shovel
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TWITCH_SHOVEL.get())
+                .pattern("T")
+                .pattern("S")
+                .pattern("S")
+                .define('T', ModItems.TWITCH_DIAMOND.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TWITCH_DIAMOND.get()), has(ModItems.TWITCH_DIAMOND.get()))
+                .save(pRecipeOutput);
+        // Twitch Hoe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TWITCH_HOE.get())
+                .pattern("TT")
+                .pattern(" S")
+                .pattern(" S")
+                .define('T', ModItems.TWITCH_DIAMOND.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.TWITCH_DIAMOND.get()), has(ModItems.TWITCH_DIAMOND.get()))
+                .save(pRecipeOutput);
+
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

@@ -19,6 +19,7 @@ public class HydrophobiaEffect extends MobEffect {
             pLivingEntity.setJumping(true);
             pLivingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 400, 2));
             pLivingEntity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 400, 200));
+            pLivingEntity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 400, 5));
             if (pLivingEntity.getHealth() <= 6) {
                 pLivingEntity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 400, 10));
                 pLivingEntity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 400, 100));

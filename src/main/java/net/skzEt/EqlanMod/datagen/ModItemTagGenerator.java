@@ -8,6 +8,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.skzEt.EqlanMod.Eqlan;
 import net.skzEt.EqlanMod.item.ModItems;
+import net.skzEt.EqlanMod.sound.ModSounds;
+import net.skzEt.EqlanMod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -24,9 +26,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.GLASSES.get(),
                         ModItems.DRAKE_PENDANT.get(),
                         ModItems.STINT_HELMET.get(),
-                        ModItems.BOXERS.get(),
-                        ModItems.CROWN_OF_LIGHT.get());
+                        ModItems.BOXERS.get());
         this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)
-                .add(ModItems.BASELINE_BUSINESS_DISK.get());
+                .add(ModItems.BASELINE_BUSINESS_DISC.get())
+                .add(ModItems.I_CRY_AT_NIGHT_DISC.get());
     }
 }

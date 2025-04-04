@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.eqlanmod.i_cry_at_night_music_disc.desc"
+  },
+  "length_in_seconds": 152.0,
+  "sound_event": "eqlanmod:i_cry_at_night"
+}

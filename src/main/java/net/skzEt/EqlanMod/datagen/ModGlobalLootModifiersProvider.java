@@ -50,6 +50,6 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 LootItemRandomChanceCondition.randomChance(0.3f).build()}, ModItems.MZLFF_MICROPHONE.get()));
         add("baseline_business_disk_from_village", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(ResourceLocation.withDefaultNamespace("chests/village")).build(),
-                LootItemRandomChanceCondition.randomChance(0.05f).build()}, ModItems.BASELINE_BUSINESS_DISK.get()));
+                LootItemRandomChanceCondition.randomChance(0.05f).build()}, ModItems.BASELINE_BUSINESS_DISC.get()));
     }
 }

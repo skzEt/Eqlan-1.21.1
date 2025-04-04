@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "forge:separate_transforms",
+	"base": {
+		"parent": "eqlanmod:item/transmitter_3d"
+	},
+	"perspectives": {
+		"gui": {
+			"parent": "eqlanmod:item/transmitter_3d"
+		},
+		"ground": {
+			"parent": "eqlanmod:item/transmitter_3d"
+		},
+		"fixed": {
+			"parent": "eqlanmod:item/transmitter_3d"
+		}
+	}
+}

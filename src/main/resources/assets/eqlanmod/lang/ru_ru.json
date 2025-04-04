@@ -20,20 +20,25 @@
   "item.eqlanmod.twitch_diamond": "Твичовский алмаз",
   "item.eqlanmod.coin_alloy": "Сплав монет",
   "item.eqlanmod.om_nom": "Ам Ням",
-  "item.eqlanmod.cactus_plush": "Танцующий кактус",
   "item.eqlanmod.eqlan_alloy": "Сплав Еблан сквада",
   "item.eqlanmod.holy_mantle": "Святая мантия",
+  "item.eqlanmod.transmitter": "Рация",
 
-  "item.eqlanmod.baseline_business_disk": "Бэйслайн Бизнес",
-  "item.eqlanmod.baseline_business_disk.desc": "CMH, mzlff - Бэйслайн Бизнес",
+  "item.eqlanmod.baseline_business_music_disc": "Бэйслайн Бизнес Диск",
+  "item.eqlanmod.baseline_business_music_disc.desc": "CMH, mzlff - Бэйслайн Бизнес (С банвордом)",
+  "item.eqlanmod.i_cry_at_night_music_disc": "Я ночью плачу",
+  "item.eqlanmod.i_cry_at_night_music_disc.desc": "Стинт, Матис - Я ночью плачу",
 
   "block.eqlanmod.twitch_ore": "Твичовская руда",
   "block.eqlanmod.deepslate_twitch_ore": "Глубокая сланцевая твичовская руда",
   "block.eqlanmod.twitch_block": "Твичовский блок",
+  "item.eqlanmod.twitch_axe": "Твичовский топор",
+  "item.eqlanmod.twitch_sword": "Твичовский меч",
+  "item.eqlanmod.twitch_pickaxe": "Твичовская кирка",
+  "item.eqlanmod.twitch_shovel": "Твичовская лопата",
+  "item.eqlanmod.twitch_hoe": "Твичовская мотыга",
 
   "effect.eqlanmod.hydrophobia": "Гидрофобия",
-
-  "sounds.eqlanmod.cactus_used": "",
 
   "creativetab.eqlan_tab": "Eqlan Mod"
 }

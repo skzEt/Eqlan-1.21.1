@@ -1,5 +1,5 @@
-// 1.21.1	2025-02-23T16:37:56.9483452	Item Models: eqlanmod
-628a75fe8af3bb249dee55c0c8258c896c0d9f76 assets/eqlanmod/models/item/baseline_business_disk.json
+// 1.21.1	2025-02-27T23:20:27.5283587	Item Models: eqlanmod
+6af3f0a792f7c05a3800d93adf33b56a33241b5e assets/eqlanmod/models/item/baseline_business_music_disc.json
 aab5dcae481f2a05913c0b68a6575ec8a8615ee4 assets/eqlanmod/models/item/boxers.json
 08d0aeb9fddcc6a83060276cdde05b26091e304b assets/eqlanmod/models/item/boxers_amethyst_trim.json
 14522d079c2794e8aa24bfceeadaa4c8d35f6450 assets/eqlanmod/models/item/boxers_copper_trim.json
@@ -38,6 +38,7 @@ b16c53befdb8edbddc9ceffa729e64d0b99be326 assets/eqlanmod/models/item/glasses_lap
 7d7e5e163f6e72fdab056882ce1f4a0e9b00a594 assets/eqlanmod/models/item/glasses_netherite_trim.json
 dce3464949b3a9e801594b5f38326d530e62fd78 assets/eqlanmod/models/item/glasses_quartz_trim.json
 50c46701d38580bf5d25ef7c323cdd24d12c36a8 assets/eqlanmod/models/item/glasses_redstone_trim.json
+0e33d010eefdf8c87b4fce4570220709cfed2ea1 assets/eqlanmod/models/item/i_cry_at_night_music_disc.json
 0406997b7b55bc48834811498e110259a99bd204 assets/eqlanmod/models/item/larva.json
 d50ccb44ef2da61a243aa0851dff3ea0354166e4 assets/eqlanmod/models/item/mzlff_microphone.json
 8853810069ae9efb4e32dab07ef595f8d8985dac assets/eqlanmod/models/item/overcooked_dumpling.json
@@ -54,5 +55,10 @@ e2b5060afb9707ae59deb3143d404c8ecd8dca36 assets/eqlanmod/models/item/stint_helme
 155f8de3519771238de821a0db695b9b53630c8d assets/eqlanmod/models/item/stint_helmet_netherite_trim.json
 f694632fac4ca021ca9bad6b81cfd1f3d27f58c5 assets/eqlanmod/models/item/stint_helmet_quartz_trim.json
 b2b2298f9510b542d942ecc5d5324a51e21d7bc0 assets/eqlanmod/models/item/stint_helmet_redstone_trim.json
+22916342e60b59e1b3f0a6c333913c404b56b935 assets/eqlanmod/models/item/twitch_axe.json
 7d2e3bcb3fa88681d5bd09f947e2e2a1ec7579e0 assets/eqlanmod/models/item/twitch_diamond.json
 a4a110799aaa8f8bdee082340b0296c025d25eb1 assets/eqlanmod/models/item/twitch_heart.json
+8fe8466aabd0d6ec02f9623bc6cec2fffc26a5fd assets/eqlanmod/models/item/twitch_hoe.json
+f7891885a774b063f2bf05d946e2ce2b1d115f2c assets/eqlanmod/models/item/twitch_pickaxe.json
+6c26fcc21a16db691d129eaef40a3f4eedc99a79 assets/eqlanmod/models/item/twitch_shovel.json
+c9749f5d5e35ad86f5d57799ff3808b66b6f9c7b assets/eqlanmod/models/item/twitch_sword.json

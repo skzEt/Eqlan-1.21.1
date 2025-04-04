@@ -54,12 +54,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TWITCH_HEART.get());
         basicItem(ModItems.COIN_ALLOY.get());
         basicItem(ModItems.EBLAN_ALLOY.get());
+        // Weapons
+        handheldItem(ModItems.TWITCH_AXE);
+        handheldItem(ModItems.TWITCH_HOE);
+        handheldItem(ModItems.TWITCH_PICKAXE);
+        handheldItem(ModItems.TWITCH_SHOVEL);
+        handheldItem(ModItems.TWITCH_SWORD);
+
         // Food
         basicItem(ModItems.OVERCOOKED_DUMPLING.get());
         basicItem(ModItems.LARVA.get());
         basicItem(ModItems.COOKED_LARVA.get());
         // Music
-        basicItem(ModItems.BASELINE_BUSINESS_DISK.get());
+        basicItem(ModItems.BASELINE_BUSINESS_DISC.get());
+        basicItem(ModItems.I_CRY_AT_NIGHT_DISC.get());
         // Armor
         trimmedArmorItem(ModItems.GLASSES);
         trimmedArmorItem(ModItems.STINT_HELMET);

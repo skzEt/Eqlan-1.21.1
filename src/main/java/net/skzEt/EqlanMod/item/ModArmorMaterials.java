@@ -40,16 +40,6 @@ public class ModArmorMaterials {
             attribute -> {
                 attribute.put(ArmorItem.Type.LEGGINGS, 4);
             }), 15, 0.1f, 0.2f, () -> ModItems.SCHOOL_BOOT.get());
-    // Crown of Light
-    public static final Holder<ArmorMaterial> CROWN_OF_LIGHT = register("crown_of_light", Util.make(new EnumMap<>(ArmorItem.Type.class),
-            attribute -> {
-                attribute.put(ArmorItem.Type.HELMET, 10);
-            }), 0, 0.5f, 0.5f, () -> Items.NETHER_STAR);
-    // Crown of Light Disabled
-    public static final Holder<ArmorMaterial> CROWN_OF_LIGHT_DISABLED = register("crown_of_light_disabled", Util.make(new EnumMap<>(ArmorItem.Type.class),
-            attribute -> {
-                attribute.put(ArmorItem.Type.HELMET, 5);
-            }), 0, 0.25f, 0.25f, () -> Items.NETHER_STAR);
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,

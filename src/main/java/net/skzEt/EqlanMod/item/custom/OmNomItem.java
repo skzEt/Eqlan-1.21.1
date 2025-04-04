@@ -29,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class OmNomItem extends Item {
-    ItemCooldowns itemCooldowns;
+    int tickCount = 5*20;
     public OmNomItem(Properties pProperties) {
         super(pProperties);
     }
@@ -41,14 +41,13 @@ public class OmNomItem extends Item {
             BlockState state = pContext.getLevel().getBlockState(blockPos);
 
             if (!isValuableBlock(state)) {
-                pContext.getPlayer().getCooldowns().addCooldown(ModItems.OM_NOM.get(), 65);
-                itemCooldowns.addCooldown(this.asItem(), 45);
+                pContext.getPlayer().getCooldowns().addCooldown(ModItems.OM_NOM.get(), tickCount);
                 pContext.getLevel().playSeededSound(null, blockPos.getX(), blockPos.getY(), blockPos.getZ(),
                         ModSounds.OM_NOM_USED.get(), SoundSource.BLOCKS, 1f, 1f, 0);
                 level.destroyBlock(blockPos, false);
 
             } else if (isOreBlock(state)) {
-                pContext.getPlayer().getCooldowns().addCooldown(ModItems.OM_NOM.get(), 65);
+                pContext.getPlayer().getCooldowns().addCooldown(ModItems.OM_NOM.get(), tickCount);
                 pContext.getLevel().playSeededSound(null, blockPos.getX(), blockPos.getY(), blockPos.getZ(),
                         ModSounds.OM_NOM_USED.get(), SoundSource.BLOCKS, 1f, 1f, 0);
                 level.destroyBlock(blockPos, true);

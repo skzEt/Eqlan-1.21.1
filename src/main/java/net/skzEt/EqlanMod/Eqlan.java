@@ -2,6 +2,7 @@ package net.skzEt.EqlanMod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -17,6 +18,8 @@ import net.skzEt.EqlanMod.event.EventHandlers;
 import net.skzEt.EqlanMod.item.ModCreativeModTabs;
 import net.skzEt.EqlanMod.item.ModItems;
 import net.skzEt.EqlanMod.loot.ModLootModifiers;
+import net.skzEt.EqlanMod.particle.HolyMantleParticles;
+import net.skzEt.EqlanMod.particle.ModParticles;
 import net.skzEt.EqlanMod.sound.ModSounds;
 import org.slf4j.Logger;
 
@@ -38,6 +41,7 @@ public class Eqlan
         ModEffect.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
+        ModParticles.register(modEventBus);
         ModSounds.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(new EventHandlers());
@@ -67,6 +71,10 @@ public class Eqlan
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+        }
+        @SubscribeEvent
+        public static void registerParticleProvider(RegisterParticleProvidersEvent event) {
+            event.registerSpriteSet(ModParticles.HOLY_MANTLE_PARTICLE.get(), HolyMantleParticles.Provider::new);
         }
     }
 }

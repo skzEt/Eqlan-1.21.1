@@ -1,19 +1,16 @@
 package net.skzEt.EqlanMod.item;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.skzEt.EqlanMod.Eqlan;
 import net.skzEt.EqlanMod.client.ModKeyboardHelper;
-import net.skzEt.EqlanMod.item.custom.CactusPlushItem;
 import net.skzEt.EqlanMod.item.custom.FuelItem;
 import net.skzEt.EqlanMod.item.custom.OmNomItem;
+import net.skzEt.EqlanMod.item.custom.TransmitterItem;
 import net.skzEt.EqlanMod.sound.ModSounds;
 
 import java.util.List;
@@ -25,7 +22,7 @@ public class ModItems {
     public static final RegistryObject<Item> OM_NOM = ITEMS.register("om_nom",
             () -> new OmNomItem(new Item.Properties().durability(600)));
     public static final RegistryObject<Item> HOLY_MANTLE = ITEMS.register("holy_mantle",
-            () ->  new Item(new Item.Properties().stacksTo(1)) {
+            () ->  new Item(new Item.Properties().stacksTo(1).fireResistant()) {
                 @Override
                 public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
                     if (ModKeyboardHelper.isHoldingShift()) {
@@ -34,8 +31,8 @@ public class ModItems {
                     super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
                 }
             });
-    public static final RegistryObject<Item> CACTUS_PLUSH = ITEMS.register("cactus_plush",
-            () -> new CactusPlushItem(new Item.Properties().durability(100)));
+    public static final RegistryObject<Item> TRANSMITTER = ITEMS.register("transmitter",
+            () -> new TransmitterItem(new Item.Properties().stacksTo(1).durability(1)));
 
     // Streamers
     public static final RegistryObject<Item> STINTOCOIN = ITEMS.register("stintocoin",
@@ -59,6 +56,23 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> EBLAN_ALLOY = ITEMS.register("eqlan_alloy",
             () -> new Item(new Item.Properties()));
+    // Weapons
+    public static final RegistryObject<Item> TWITCH_AXE = ITEMS.register("twitch_axe",
+            () -> new AxeItem(ModToolTiers.TWITCH, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.TWITCH, 7, -3.5f))));
+    public static final RegistryObject<Item> TWITCH_SWORD = ITEMS.register("twitch_sword",
+            () -> new SwordItem(ModToolTiers.TWITCH, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.TWITCH, 4, -2.2f))));
+    public static final RegistryObject<Item> TWITCH_SHOVEL = ITEMS.register("twitch_shovel",
+            () -> new ShovelItem(ModToolTiers.TWITCH, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.TWITCH, 0, -2.5f))));
+    public static final RegistryObject<Item> TWITCH_PICKAXE = ITEMS.register("twitch_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.TWITCH, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.TWITCH, 0, -2.5f))));
+    public static final RegistryObject<Item> TWITCH_HOE = ITEMS.register("twitch_hoe",
+            () -> new HoeItem(ModToolTiers.TWITCH, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.TWITCH, 0, -2.5f))));
+
     // Armor
     public static final RegistryObject<Item> GLASSES = ITEMS.register("glasses",
             () -> new ArmorItem(ModArmorMaterials.GLASSES, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -66,10 +80,6 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.STINT, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> BOXERS = ITEMS.register("boxers",
             () -> new ArmorItem(ModArmorMaterials.BOXERS, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final RegistryObject<Item> CROWN_OF_LIGHT = ITEMS.register("crown_of_light",
-            () -> new ArmorItem(ModArmorMaterials.CROWN_OF_LIGHT, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final RegistryObject<Item> CROWN_OF_LIGHT_DISABLED = ITEMS.register("crown_of_light_disabled",
-            () -> new ArmorItem(ModArmorMaterials.CROWN_OF_LIGHT, ArmorItem.Type.HELMET, new Item.Properties()));
     // Food
     public static final RegistryObject<Item> OVERCOOKED_DUMPLING = ITEMS.register("overcooked_dumpling",
             () -> new Item(new Item.Properties().food(ModFoods.OVERCOOKED_DUMPLING)));
@@ -78,9 +88,10 @@ public class ModItems {
     public static final RegistryObject<Item> COOKED_LARVA = ITEMS.register("cooked_larva",
             () -> new Item(new Item.Properties().food(ModFoods.COOKED_LARVA)));
     // Music Disc
-    public static final RegistryObject<Item> BASELINE_BUSINESS_DISK = ITEMS.register("baseline_business_disk",
+    public static final RegistryObject<Item> BASELINE_BUSINESS_DISC = ITEMS.register("baseline_business_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BASELINE_BUSINESS_KEY).stacksTo(1)));
-
+    public static final RegistryObject<Item> I_CRY_AT_NIGHT_DISC = ITEMS.register("i_cry_at_night_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.I_CRY_AT_NIGHT_KEY).stacksTo(1)));
 
 
     public static void register(IEventBus eventBus) {

@@ -17,10 +17,66 @@
       "eqlanmod:holy_mantle_used"
     ]
   },
+  "noga": {
+    "subtitles": "sounds.eqlanmod.noga",
+    "sounds": [
+      "eqlanmod:noga"
+    ]
+  },
+  "blyat": {
+    "subtitles": "sounds.eqlanmod.blyat",
+    "sounds": [
+      "eqlanmod:blyat"
+    ]
+  },
+  "fnaf_1": {
+    "subtitles": "sounds.eqlanmod.fnaf_1",
+    "sounds": [
+      "eqlanmod:fnaf_1"
+    ]
+  },
+  "fnaf_2": {
+    "subtitles": "sounds.eqlanmod.fnaf_2",
+    "sounds": [
+      "eqlanmod:fnaf_2"
+    ]
+  },
+  "fnaf_3": {
+    "subtitles": "sounds.eqlanmod.fnaf_3",
+    "sounds": [
+      "eqlanmod:fnaf_3"
+    ]
+  },
+  "fnaf_4": {
+    "subtitles": "sounds.eqlanmod.fnaf_4",
+    "sounds": [
+      "eqlanmod:fnaf_4"
+    ]
+  },
+  "fnaf_5": {
+    "subtitles": "sounds.eqlanmod.fnaf_5",
+    "sounds": [
+      "eqlanmod:fnaf_5"
+    ]
+  },
+  "fnaf_6": {
+    "subtitles": "sounds.eqlanmod.fnaf_6",
+    "sounds": [
+      "eqlanmod:fnaf_6"
+    ]
+  },
   "baseline_business": {
     "sounds": [
       {
         "name": "eqlanmod:baseline_business",
+        "stream": true
+      }
+    ]
+  },
+  "i_cry_at_night": {
+    "sounds": [
+      {
+        "name": "eqlanmod:i_cry_at_night",
         "stream": true
       }
     ]

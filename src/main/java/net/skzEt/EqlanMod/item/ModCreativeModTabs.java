@@ -38,15 +38,21 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.EBLAN_ALLOY.get());
                         // Custom Items
                         output.accept(ModItems.OM_NOM.get());
-                        output.accept(ModItems.CACTUS_PLUSH.get());
                         output.accept(ModItems.HOLY_MANTLE.get());
+                        output.accept(ModItems.TRANSMITTER.get());
                         // Music
-                        output.accept(ModItems.BASELINE_BUSINESS_DISK.get());
+                        output.accept(ModItems.BASELINE_BUSINESS_DISC.get());
+                        output.accept(ModItems.I_CRY_AT_NIGHT_DISC.get());
                         // Armor
                         output.accept(ModItems.GLASSES.get());
                         output.accept(ModItems.STINT_HELMET.get());
                         output.accept(ModItems.BOXERS.get());
-                        output.accept(ModItems.CROWN_OF_LIGHT.get());
+                        // Weapons
+                        output.accept(ModItems.TWITCH_SWORD.get());
+                        output.accept(ModItems.TWITCH_AXE.get());
+                        output.accept(ModItems.TWITCH_PICKAXE.get());
+                        output.accept(ModItems.TWITCH_SHOVEL.get());
+                        output.accept(ModItems.TWITCH_HOE.get());
                         // Food
                         output.accept(ModItems.OVERCOOKED_DUMPLING.get());
                         output.accept(ModItems.LARVA.get());
