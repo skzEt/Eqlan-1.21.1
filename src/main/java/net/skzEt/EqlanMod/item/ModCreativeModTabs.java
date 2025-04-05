@@ -1,10 +1,8 @@
 package net.skzEt.EqlanMod.item;
 
-import jdk.jfr.Registered;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -40,6 +38,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.OM_NOM.get());
                         output.accept(ModItems.HOLY_MANTLE.get());
                         output.accept(ModItems.TRANSMITTER.get());
+                        // Custom Blocks
+                        output.accept(ModBlocks.TEST_BLOCK.get());
                         // Music
                         output.accept(ModItems.BASELINE_BUSINESS_DISC.get());
                         output.accept(ModItems.I_CRY_AT_NIGHT_DISC.get());

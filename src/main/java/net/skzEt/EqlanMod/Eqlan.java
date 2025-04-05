@@ -1,7 +1,9 @@
 package net.skzEt.EqlanMod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,7 +15,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.skzEt.EqlanMod.block.ModBlocks;
+import net.skzEt.EqlanMod.client.screen.ModMenuTypes;
+import net.skzEt.EqlanMod.client.screen.custom.TestScreen;
 import net.skzEt.EqlanMod.effect.ModEffect;
+import net.skzEt.EqlanMod.entity.ModBlockEntity;
+import net.skzEt.EqlanMod.entity.render.TestBlockEntityRender;
 import net.skzEt.EqlanMod.event.EventHandlers;
 import net.skzEt.EqlanMod.item.ModCreativeModTabs;
 import net.skzEt.EqlanMod.item.ModItems;
@@ -38,7 +44,10 @@ public class Eqlan
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntity.register(modEventBus);
         ModEffect.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
 
         ModLootModifiers.register(modEventBus);
         ModParticles.register(modEventBus);
@@ -71,10 +80,15 @@ public class Eqlan
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            MenuScreens.register(ModMenuTypes.TEST_MENU.get(), TestScreen::new);
         }
         @SubscribeEvent
         public static void registerParticleProvider(RegisterParticleProvidersEvent event) {
             event.registerSpriteSet(ModParticles.HOLY_MANTLE_PARTICLE.get(), HolyMantleParticles.Provider::new);
+        }
+        @SubscribeEvent
+        public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+            event.registerBlockEntityRenderer(ModBlockEntity.TEST_BLOCK.get(), TestBlockEntityRender::new);
         }
     }
 }
