@@ -1,6 +1,5 @@
 package net.skzEt.EqlanMod.recipe;
 
-import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.HolderLookup;
@@ -13,7 +12,6 @@ import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
-import net.skzEt.EqlanMod.block.entity.custom.TableOfUpgradeItemEntity;
 
 public record TableOfUpgradeItemRecipe(Ingredient inputItem, ItemStack output) implements Recipe<TableOfUpgradeItemRecipeInput> {
 

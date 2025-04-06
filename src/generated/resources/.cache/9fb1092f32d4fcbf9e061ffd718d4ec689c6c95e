@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-23T22:33:37.7163915	Recipes
+// 1.21.1	2025-04-06T23:10:59.7551415	Recipes
 293e68179f55f9be793b0771a483116021007766 data/eqlanmod/advancement/recipes/misc/coin_alloy_from_blasting_stintocoin.json
 3a2de4192d702d425180697000a18f86e8e8a0ad data/eqlanmod/advancement/recipes/misc/coin_alloy_from_smelting_stintocoin.json
 5ddc185a3317b3302e431a5e647fa172a57149d9 data/eqlanmod/advancement/recipes/misc/cooked_larva_from_campfire_cooking_larva.json
@@ -18,6 +18,7 @@ b82e55ad61c75819194382d83d401ed1a9c02d6a data/eqlanmod/advancement/recipes/misc/
 ed802d1a2cef199ad6a2cb3d9b3980c778be4b5c data/eqlanmod/advancement/recipes/misc/school_boot.json
 fc6d8e083bdef2c68bba8d3a115e4db809a1f46a data/eqlanmod/advancement/recipes/misc/stintocoin.json
 dcf5b9da5cd960864b713d149ec29ba41bbddccb data/eqlanmod/advancement/recipes/misc/stint_helmet.json
+dfbda06e7a6d1ef66f030adfa3d4ae709d28fa6b data/eqlanmod/advancement/recipes/misc/table_of_upgrade_item_block.json
 9f03b927d8a343d9c4952612348058a86876b090 data/eqlanmod/advancement/recipes/misc/twitch_axe.json
 c81a6d7ea40479de4596842f659ee117f2a99569 data/eqlanmod/advancement/recipes/misc/twitch_block.json
 b16b86c326c8ed89f5891ac56cf82dc2648b80f8 data/eqlanmod/advancement/recipes/misc/twitch_diamond.json
@@ -25,7 +26,6 @@ b16b86c326c8ed89f5891ac56cf82dc2648b80f8 data/eqlanmod/advancement/recipes/misc/
 ab53398c4205647a1542dca37d2ec5662daa8199 data/eqlanmod/advancement/recipes/misc/twitch_diamond_from_blasting_twitch_ore.json
 750993b82c9c93758dfcaed2960e4a83e2191cbe data/eqlanmod/advancement/recipes/misc/twitch_diamond_from_smelting_deepslate_twitch_ore.json
 d605c302b5964837db3d833c978db568bab65c05 data/eqlanmod/advancement/recipes/misc/twitch_diamond_from_smelting_twitch_ore.json
-70e2954e6bb0f38de449ab94930e2145471db601 data/eqlanmod/advancement/recipes/misc/twitch_heart.json
 4e526cc8217219f50f8eae0260750b48641aa8d9 data/eqlanmod/advancement/recipes/misc/twitch_hoe.json
 f9a07f0a78aa38be0b38adf0aeea9229101d5e2a data/eqlanmod/advancement/recipes/misc/twitch_pickaxe.json
 a6edaa9d42782cddabccf7bac64f9ba0ded26785 data/eqlanmod/advancement/recipes/misc/twitch_shovel.json
@@ -49,6 +49,7 @@ c57dc0562bbfaa256f00610d0c31bf60cf33dbed data/eqlanmod/recipe/overcooked_dumplin
 a64aa1124f47725c2f7b24a03730b56f2c03952f data/eqlanmod/recipe/school_boot.json
 dfc7f20de05e8dde2577c6894315ce01c9c55aa5 data/eqlanmod/recipe/stintocoin.json
 09c2d5ec1df74e11d8b50656c481c37592819897 data/eqlanmod/recipe/stint_helmet.json
+a4b92c7c6c6122bfae6e1cb08c90680929fedd47 data/eqlanmod/recipe/table_of_upgrade_item_block.json
 e62a7a8dd532f1dfa00fd59b29716990dd34100e data/eqlanmod/recipe/twitch_axe.json
 a0da96d7034f850ecb164a93f6d26ab762b6223c data/eqlanmod/recipe/twitch_block.json
 2ccfd970fa767361281ede6e43dea75ffe9d432c data/eqlanmod/recipe/twitch_diamond.json
@@ -56,7 +57,6 @@ f7a46f2433d22ef430f72541da4384555b225c0d data/eqlanmod/recipe/twitch_diamond_fro
 e2de596d03e40f66c2cfec6935831d575f86e3d1 data/eqlanmod/recipe/twitch_diamond_from_blasting_twitch_ore.json
 768f3fe89a8714de4d8375a2d30aff3869ab1649 data/eqlanmod/recipe/twitch_diamond_from_smelting_deepslate_twitch_ore.json
 1fc37e97d2b26d18d6dd42f4a776c3a01cce1bd5 data/eqlanmod/recipe/twitch_diamond_from_smelting_twitch_ore.json
-291c71409cda429dcd751d422e1ee6e15ded3741 data/eqlanmod/recipe/twitch_heart.json
 5d46c37d4fe9e63518a8309156ce30458b1ed337 data/eqlanmod/recipe/twitch_hoe.json
 abd00ca127bb7a225481a7606818e302b6e3faec data/eqlanmod/recipe/twitch_pickaxe.json
 bb2b1ea8f2e90250e64ffa44d54d5e3bf47a9d39 data/eqlanmod/recipe/twitch_shovel.json

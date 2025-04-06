@@ -34,7 +34,6 @@ public class TableOfUpgradeItemMenu extends AbstractContainerMenu {
 
         this.addSlot(new SlotItemHandler(entityBlock.itemHandler, 0, 55, 35));
         this.addSlot(new SlotItemHandler(entityBlock.itemHandler, 1, 105, 35));
-
         addDataSlots(data);
     }
 

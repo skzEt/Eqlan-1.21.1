@@ -1,9 +1,9 @@
 {
   "type": "eqlanmod:table_of_upgrade_item",
   "ingredient": {
-    "item": "eqlanmod:stintocoin"
+    "item": "eqlanmod:twitch_diamond"
   },
   "result": {
-    "id": "eqlanmod:eqlan_alloy"
+    "id": "eqlanmod:twitch_heart"
   }
 }

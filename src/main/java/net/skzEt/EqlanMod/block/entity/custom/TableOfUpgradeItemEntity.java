@@ -38,10 +38,10 @@ public class TableOfUpgradeItemEntity extends BlockEntity implements MenuProvide
     private static final int INPUT_SLOT = 0;
     private static final int OUTPUT_SLOT = 1;
 
+
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 300;
-    private int defaultMaxProgress = 300;
+    private int maxProgress = 100;
 
     public TableOfUpgradeItemEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntity.TABLE_OF_UPGRADE_ITEM_BE.get(), pPos, pBlockState);
@@ -133,7 +133,7 @@ public class TableOfUpgradeItemEntity extends BlockEntity implements MenuProvide
 
     private void resetProgress() {
         this.progress = 0;
-        this.maxProgress = defaultMaxProgress;
+        this.maxProgress = 100;
     }
 
     private void craftItem() {

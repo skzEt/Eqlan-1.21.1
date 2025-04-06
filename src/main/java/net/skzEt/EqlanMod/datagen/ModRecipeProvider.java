@@ -81,12 +81,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', Items.COAL)
                 .unlockedBy(getHasName(Items.COAL), has(Items.COAL))
                 .save(pRecipeOutput);
-        // Twitch Heart
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TWITCH_HEART.get())
-                .pattern( "TG")
+        // Table of Upgrade Items
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TABLE_OF_UPGRADE_ITEM.get())
+                .pattern("TRT")
+                .pattern("RDR")
+                .pattern("TRT")
                 .define('T', ModItems.TWITCH_DIAMOND.get())
-                .define('G', Items.GOLD_INGOT)
+                .define('R', Items.REDSTONE)
+                .define('D', Items.DIAMOND)
                 .unlockedBy(getHasName(ModItems.TWITCH_DIAMOND.get()), has(ModItems.TWITCH_DIAMOND.get()))
+                .unlockedBy(getHasName(Items.REDSTONE), has(Items.REDSTONE))
+                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
                 .save(pRecipeOutput);
         // Stint-o-Coin
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STINTOCOIN.get())

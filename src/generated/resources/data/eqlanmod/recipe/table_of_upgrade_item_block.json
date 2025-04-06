@@ -2,18 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": {
-      "item": "minecraft:gold_ingot"
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "R": {
+      "item": "minecraft:redstone"
     },
     "T": {
       "item": "eqlanmod:twitch_diamond"
     }
   },
   "pattern": [
-    "TG"
+    "TRT",
+    "RDR",
+    "TRT"
   ],
   "result": {
     "count": 1,
-    "id": "eqlanmod:twitch_heart"
+    "id": "eqlanmod:table_of_upgrade_item_block"
   }
 }

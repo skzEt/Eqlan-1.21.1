@@ -15,7 +15,6 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<TableOfUpgradeItemMenu>> TABLE_OF_UPGRADE_ITEM_MENU =
             MENU_TYPES.register("table_of_upgrade_item_menu", () -> IForgeMenuType.create(TableOfUpgradeItemMenu::new));
-
     public static void register(IEventBus eventBus) {
         MENU_TYPES.register(eventBus);
     }
