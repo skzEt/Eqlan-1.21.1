@@ -1,37 +1,53 @@
 package net.skzEt.EqlanMod.client.screen.custom;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.inventory.MenuType;
-import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.items.SlotItemHandler;
 import net.skzEt.EqlanMod.block.ModBlocks;
+import net.skzEt.EqlanMod.block.entity.custom.TableOfUpgradeItemEntity;
 import net.skzEt.EqlanMod.client.screen.ModMenuTypes;
-import net.skzEt.EqlanMod.entity.custom.TestBlockEnity;
-import org.jetbrains.annotations.Nullable;
 
-public class TestMenu extends AbstractContainerMenu {
-    public final TestBlockEnity block;
+public class TableOfUpgradeItemMenu extends AbstractContainerMenu {
+    public final TableOfUpgradeItemEntity entityBlock;
     private final Level level;
-    public TestMenu(int pContainerId, Inventory inventory, FriendlyByteBuf extraData) {
-        this(pContainerId, inventory, inventory.player.level().getBlockEntity(extraData.readBlockPos()));
-    }
+    private final ContainerData data;
 
-    public TestMenu(int pContainerId, Inventory inventory, BlockEntity blockEntity) {
-        super(ModMenuTypes.TEST_MENU.get(), pContainerId);
-        this.block = ((TestBlockEnity) blockEntity);
+    public TableOfUpgradeItemMenu(int pContainerId, Inventory inventory, FriendlyByteBuf extraData) {
+        this(pContainerId, inventory, inventory.player.level().getBlockEntity(extraData.readBlockPos()),
+                new SimpleContainerData(2));
+    }
+    public TableOfUpgradeItemMenu(int pContainerId, Inventory inventory, BlockEntity blockEntity, ContainerData data) {
+        super(ModMenuTypes.TABLE_OF_UPGRADE_ITEM_MENU.get(), pContainerId);
+        this.entityBlock = ((TableOfUpgradeItemEntity) blockEntity);
         this.level = inventory.player.level();
+        this.data = data;
 
         addPlayerInventory(inventory);
         addPlayerHotbar(inventory);
 
-        this.addSlot(new SlotItemHandler(this.block.inventory, 0, 80, 35));
+        this.addSlot(new SlotItemHandler(entityBlock.itemHandler, 0, 55, 35));
+        this.addSlot(new SlotItemHandler(entityBlock.itemHandler, 1, 105, 35));
+
+        addDataSlots(data);
+    }
+
+    public boolean isCrafting() {
+        return data.get(0) > 0;
+    }
+
+    public int getScaleArrow() {
+        int progress = this.data.get(0);
+        int maxProgress = this.data.get(1);
+        int arrowPixelSize = 24;
+
+        return maxProgress != 0 && progress != 0 ? progress * arrowPixelSize / maxProgress : 0;
     }
 
     private static final int HOTBAR_SLOT_COUNT = 9;
@@ -42,7 +58,8 @@ public class TestMenu extends AbstractContainerMenu {
     private static final int VANILLA_FIRST_SLOT_INDEX = 0;
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
-    private static final int TE_INVENTORY_SLOT_COUNT = 1;
+    private static final int TE_INVENTORY_SLOT_COUNT = 2;
+
     @Override
     public ItemStack quickMoveStack(Player playerIn, int pIndex) {
         Slot sourceSlot = slots.get(pIndex);
@@ -73,9 +90,9 @@ public class TestMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public boolean stillValid(Player pPlayer) {
-        return stillValid(ContainerLevelAccess.create(level, block.getBlockPos()),
-                pPlayer, ModBlocks.TEST_BLOCK.get());
+    public boolean stillValid(Player player) {
+        return stillValid(ContainerLevelAccess.create(level, entityBlock.getBlockPos()),
+                player, ModBlocks.TABLE_OF_UPGRADE_ITEM.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

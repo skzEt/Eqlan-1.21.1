@@ -39,7 +39,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HOLY_MANTLE.get());
                         output.accept(ModItems.TRANSMITTER.get());
                         // Custom Blocks
-                        output.accept(ModBlocks.TEST_BLOCK.get());
+                        output.accept(ModBlocks.TABLE_OF_UPGRADE_ITEM.get());
                         // Music
                         output.accept(ModItems.BASELINE_BUSINESS_DISC.get());
                         output.accept(ModItems.I_CRY_AT_NIGHT_DISC.get());

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "eqlanmod:table_of_upgrade_item_block"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "eqlanmod:blocks/table_of_upgrade_item_block"
+}

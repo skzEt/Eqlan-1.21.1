@@ -32,6 +32,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_TWITCH_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_TWITCH_ORE.get(), ModItems.TWITCH_DIAMOND.get(), 1, 3));
         this.dropSelf(ModBlocks.TWITCH_BLOCK.get());
+        this.dropSelf(ModBlocks.TABLE_OF_UPGRADE_ITEM.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

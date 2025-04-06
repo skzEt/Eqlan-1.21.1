@@ -10,6 +10,7 @@ import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.skzEt.EqlanMod.Eqlan;
 import net.skzEt.EqlanMod.block.ModBlocks;
 import net.skzEt.EqlanMod.item.ModItems;
+import net.skzEt.EqlanMod.recipe.ModRecipes;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -243,7 +244,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreCooking(recipeOutput, RecipeSerializer.CAMPFIRE_COOKING_RECIPE, CampfireCookingRecipe::new, pIngredients, pCategory, pResult,
                 pExperience, pCookingTime, pGroup, "_from_campfire_cooking");
     }
-
     protected static <T extends AbstractCookingRecipe> void oreCooking(RecipeOutput recipeOutput, RecipeSerializer<T> pCookingSerializer, AbstractCookingRecipe.Factory<T> factory,
                                                                        List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
         for (ItemLike itemlike : pIngredients) {

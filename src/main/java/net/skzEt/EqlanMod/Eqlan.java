@@ -15,17 +15,18 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.skzEt.EqlanMod.block.ModBlocks;
+import net.skzEt.EqlanMod.block.entity.render.TableOfUpgradeItemRender;
 import net.skzEt.EqlanMod.client.screen.ModMenuTypes;
-import net.skzEt.EqlanMod.client.screen.custom.TestScreen;
+import net.skzEt.EqlanMod.client.screen.custom.TableOfUpgradeItemScreen;
 import net.skzEt.EqlanMod.effect.ModEffect;
-import net.skzEt.EqlanMod.entity.ModBlockEntity;
-import net.skzEt.EqlanMod.entity.render.TestBlockEntityRender;
+import net.skzEt.EqlanMod.block.entity.ModBlockEntity;
 import net.skzEt.EqlanMod.event.EventHandlers;
 import net.skzEt.EqlanMod.item.ModCreativeModTabs;
 import net.skzEt.EqlanMod.item.ModItems;
 import net.skzEt.EqlanMod.loot.ModLootModifiers;
 import net.skzEt.EqlanMod.particle.HolyMantleParticles;
 import net.skzEt.EqlanMod.particle.ModParticles;
+import net.skzEt.EqlanMod.recipe.ModRecipes;
 import net.skzEt.EqlanMod.sound.ModSounds;
 import org.slf4j.Logger;
 
@@ -46,8 +47,9 @@ public class Eqlan
         ModBlocks.register(modEventBus);
         ModBlockEntity.register(modEventBus);
         ModEffect.register(modEventBus);
-        ModMenuTypes.register(modEventBus);
 
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
         ModParticles.register(modEventBus);
@@ -80,7 +82,7 @@ public class Eqlan
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            MenuScreens.register(ModMenuTypes.TEST_MENU.get(), TestScreen::new);
+            MenuScreens.register(ModMenuTypes.TABLE_OF_UPGRADE_ITEM_MENU.get(), TableOfUpgradeItemScreen::new);
         }
         @SubscribeEvent
         public static void registerParticleProvider(RegisterParticleProvidersEvent event) {
@@ -88,7 +90,7 @@ public class Eqlan
         }
         @SubscribeEvent
         public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
-            event.registerBlockEntityRenderer(ModBlockEntity.TEST_BLOCK.get(), TestBlockEntityRender::new);
+            event.registerBlockEntityRenderer(ModBlockEntity.TABLE_OF_UPGRADE_ITEM_BE.get(), TableOfUpgradeItemRender::new);
         }
     }
 }

@@ -25,6 +25,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.TWITCH_BLOCK);
         blockWithItem(ModBlocks.TWITCH_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_TWITCH_ORE);
+
+        blockWithItem(ModBlocks.TABLE_OF_UPGRADE_ITEM);
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

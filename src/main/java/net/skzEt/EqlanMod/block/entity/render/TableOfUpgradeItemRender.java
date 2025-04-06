@@ -1,4 +1,4 @@
-package net.skzEt.EqlanMod.entity.render;
+package net.skzEt.EqlanMod.block.entity.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
@@ -14,27 +14,26 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LightLayer;
-import net.skzEt.EqlanMod.entity.custom.TestBlockEnity;
+import net.skzEt.EqlanMod.block.entity.custom.TableOfUpgradeItemEntity;
 
-public class TestBlockEntityRender implements BlockEntityRenderer<TestBlockEnity> {
-    public TestBlockEntityRender(BlockEntityRendererProvider.Context context) {}
+public class TableOfUpgradeItemRender implements BlockEntityRenderer<TableOfUpgradeItemEntity> {
+    public TableOfUpgradeItemRender(BlockEntityRendererProvider.Context context) {}
     @Override
-    public void render(TestBlockEnity pBlockEntity, float pPartialTick, PoseStack pPoseStack, MultiBufferSource pBufferSource, int pPackedLight, int pPackedOverlay) {
+    public void render(TableOfUpgradeItemEntity entity, float v, PoseStack poseStack, MultiBufferSource multiBufferSource, int i, int i1) {
         ItemRenderer itemRenderer = Minecraft.getInstance().getItemRenderer();
-        ItemStack itemStack = pBlockEntity.inventory.getStackInSlot(0);
+        ItemStack itemStack = entity.itemHandler.getStackInSlot(0);
 
-        pPoseStack.pushPose();
-        pPoseStack.translate(0.5f, 1.15f,0.5f);
-        pPoseStack.scale(0.5f, 0.5f, 0.5f);
-        pPoseStack.mulPose(Axis.XN.rotationDegrees(pBlockEntity.getRenderingRotation()));
-        pPoseStack.mulPose(Axis.YN.rotationDegrees(pBlockEntity.getRenderingRotation()));
-        pPoseStack.mulPose(Axis.ZN.rotationDegrees(pBlockEntity.getRenderingRotation()));
+        poseStack.pushPose();
+        poseStack.translate(0.5f, 1.05f,0.5f);
+        poseStack.scale(0.6f, 0.6f, 0.6f);
+        poseStack.mulPose(Axis.YN.rotationDegrees(90));
+        poseStack.mulPose(Axis.XN.rotationDegrees(90));
 
         itemRenderer.renderStatic(itemStack, ItemDisplayContext.FIXED,
-                getLightLevel(pBlockEntity.getLevel(), pBlockEntity.getBlockPos()),
-                OverlayTexture.NO_OVERLAY, pPoseStack, pBufferSource, pBlockEntity.getLevel(),
+                getLightLevel(entity.getLevel(), entity.getBlockPos()),
+                OverlayTexture.NO_OVERLAY, poseStack, multiBufferSource, entity.getLevel(),
                 1);
-        pPoseStack.popPose();
+        poseStack.popPose();
     }
 
     private int getLightLevel(Level pLevel, BlockPos pPos) {

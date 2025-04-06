@@ -16,7 +16,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.skzEt.EqlanMod.Eqlan;
-import net.skzEt.EqlanMod.block.custom.TestBlock;
+import net.skzEt.EqlanMod.block.custom.TableOfUpgradeItemBlock;
 import net.skzEt.EqlanMod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -34,9 +34,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> TWITCH_BLOCK = registerBlock("twitch_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
                     .sound(SoundType.ANVIL)));
-
-    public static final RegistryObject<Block> TEST_BLOCK = registerBlock("test_block",
-            () -> new TestBlock(BlockBehaviour.Properties.of().noOcclusion()));
+    // Custom Blocks;
+    public static final RegistryObject<Block> TABLE_OF_UPGRADE_ITEM = registerBlock("table_of_upgrade_item_block",
+            () -> new TableOfUpgradeItemBlock(BlockBehaviour.Properties.of()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
