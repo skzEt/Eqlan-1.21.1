@@ -1,0 +1,9 @@
+{
+  "type": "eqlanmod:table_of_upgrade_item",
+  "ingredient": {
+    "item": "eqlanmod:stintocoin"
+  },
+  "result": {
+    "id": "eqlanmod:eqlan_alloy"
+  }
+}

@@ -1,4 +1,5 @@
-// 1.21.1	2025-02-23T15:33:21.7885429	Loot Tables
+// 1.21.1	2025-04-06T00:27:12.1337656	Loot Tables
 22dcd38b05f1bd789e5fa434742ac7af551f9aa8 data/eqlanmod/loot_table/blocks/deepslate_twitch_ore.json
+73d3e380b475667225d8dda03d7f3aebbd28ca34 data/eqlanmod/loot_table/blocks/table_of_upgrade_item_block.json
 3fd8d4cdcbdd43d37683b42a6715904a3670144e data/eqlanmod/loot_table/blocks/twitch_block.json
 7154909e143b3c332c02c0d820c666ec075f9cf6 data/eqlanmod/loot_table/blocks/twitch_ore.json

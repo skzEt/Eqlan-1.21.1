@@ -1,10 +1,13 @@
-// 1.21.1	2025-02-23T15:33:21.787145	Block States: eqlanmod
+// 1.21.1	2025-04-06T00:27:12.1326056	Block States: eqlanmod
 d8b0f225675167dc3a4e7c5c807d7927ab9a218b assets/eqlanmod/blockstates/deepslate_twitch_ore.json
+b08dcb6d996674be4f945261be9adf73721f6ec0 assets/eqlanmod/blockstates/table_of_upgrade_item_block.json
 490a2a4da12b05b0f9161395211c24dcede1b76a assets/eqlanmod/blockstates/twitch_block.json
 89c03c2cbfb9dc4d1859b9ae9fe8fb4dc1917aed assets/eqlanmod/blockstates/twitch_ore.json
 e34a820eedf5b15723a2c769d2bb74bc6aafa41d assets/eqlanmod/models/block/deepslate_twitch_ore.json
+4c6f156e7cfdc76099fa6305408e28434ea098ae assets/eqlanmod/models/block/table_of_upgrade_item_block.json
 75e462511b680788a773b0be92d8d69f6375e0e3 assets/eqlanmod/models/block/twitch_block.json
 f53876154d6fe44d750f73cc4ca3dc76caa9c92e assets/eqlanmod/models/block/twitch_ore.json
 76a7e2611816f49758aea067775b9082a8ff7b43 assets/eqlanmod/models/item/deepslate_twitch_ore.json
+4bea4ac0c8e036a97b83ff8fa39b871f5be1e287 assets/eqlanmod/models/item/table_of_upgrade_item_block.json
 acbb0318e47b74e3d9df9be858c6bb164b580731 assets/eqlanmod/models/item/twitch_block.json
 cf3072c805c6cb37f42bb8489013ef1f3507ee97 assets/eqlanmod/models/item/twitch_ore.json
